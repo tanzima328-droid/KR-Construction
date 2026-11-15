@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="K.R Construction Management Dashboard">
+  <title>K.R Construction | Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand"><span class="brand-mark">KR</span><div><strong>K.R Construction</strong><small>Management System</small></div></div>
+      <nav aria-label="Main navigation">
+        <button class="nav-item active" data-page="Dashboard">◫ <span>Dashboard</span></button>
+        <button class="nav-item" data-page="Projects">▤ <span>Projects</span></button>
+        <button class="nav-item" data-page="Shareholders">♙ <span>Shareholders</span></button>
+        <button class="nav-item" data-page="Expenses">▥ <span>Expenses</span></button>
+        <button class="nav-item" data-page="Quotations">▧ <span>Quotations</span></button>
+        <button class="nav-item" data-page="Money Receipts">▣ <span>Money Receipts</span></button>
+      </nav>
+      <p class="sidebar-foot">Demo interface · No live data</p>
+    </aside>
+    <main class="main">
+      <header class="topbar"><button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button><div><p class="eyebrow">OVERVIEW</p><h1 id="pageTitle">Dashboard</h1></div><span class="user-pill">Admin Preview</span></header>
+      <section id="dashboardContent">
+        <p class="intro">Welcome to K.R Construction. Your workspace is ready for setup.</p>
+        <div class="stats">
+          <article class="stat"><span>Total Projects</span><strong>0</strong><small>Connect database to view</small></article>
+          <article class="stat"><span>Shareholders</span><strong>0</strong><small>Connect database to view</small></article>
+          <article class="stat"><span>Total Investment</span><strong>৳ 0</strong><small>Connect database to view</small></article>
+          <article class="stat"><span>Project Expenses</span><strong>৳ 0</strong><small>Connect database to view</small></article>
+        </div>
+        <div class="panels"><section class="panel"><h2>Recent Projects</h2><p>No projects added yet.</p></section><section class="panel"><h2>Quick Setup</h2><p>Next: configure Supabase, authentication and user permissions.</p><span class="status">Setup pending</span></section></div>
+      </section>
+      <section class="panel hidden" id="placeholderContent" aria-live="polite"><h2 id="sectionTitle"></h2><p>This module will be connected in the next development steps.</p></section>
+    </main>
+  </div>
+</body>
+</html>
